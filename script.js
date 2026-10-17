@@ -39,34 +39,48 @@ themeButton.addEventListener('click', () => {
 const menuButton = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
+function setMenuOpen(isOpen, returnFocus = false) {
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+  menuButton.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+  navLinks.classList.toggle('open', isOpen);
+  if (returnFocus) menuButton.focus();
+}
+
 menuButton.addEventListener('click', () => {
   const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
-  menuButton.setAttribute('aria-expanded', String(!isOpen));
-  menuButton.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation');
-  navLinks.classList.toggle('open', !isOpen);
+  setMenuOpen(!isOpen);
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+    setMenuOpen(false, true);
+  }
 });
 
 // Close the mobile menu after selecting a section.
 navLinks.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => {
-    menuButton.setAttribute('aria-expanded', 'false');
-    menuButton.setAttribute('aria-label', 'Open navigation');
-    navLinks.classList.remove('open');
+    setMenuOpen(false);
   });
 });
 
-// Reveal content as it enters the viewport; show everything if unsupported.
+// Animate reveals only after the observer initializes successfully.
 const revealItems = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((entries, currentObserver) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        currentObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  revealItems.forEach((item) => observer.observe(item));
+  try {
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          currentObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.documentElement.classList.add('js-reveal');
+    revealItems.forEach((item) => observer.observe(item));
+  } catch (error) {
+    revealItems.forEach((item) => item.classList.add('is-visible'));
+  }
 } else {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }

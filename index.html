@@ -4,8 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0d12">
-  <meta name="description" content="Mohamed Elshahat — Computer Science student and aspiring software developer.">
-  <title>Mohamed Elshahat — Developer Portfolio</title>
+  <meta name="description" content="Mohamed Elshahat is a fourth-year Computer Science student seeking software development internships and entry-level opportunities.">
+  <meta property="og:title" content="Mohamed Elshahat | Computer Science Student">
+  <meta property="og:description" content="Fourth-year Computer Science student seeking software development internships and entry-level opportunities.">
+  <meta property="og:type" content="website">
+  <title>Mohamed Elshahat | CS Student Seeking Software Development Opportunities</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,74 +16,199 @@
   <script defer src="script.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="background-grid" aria-hidden="true"></div>
+
   <header class="site-header">
     <nav class="nav wrap" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Mohamed Elshahat home"><span class="brand-mark">M<span>.</span></span><span class="brand-name">MOHAMED ELSHAHAT</span></a>
-      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <a class="brand" href="#home" aria-label="Mohamed Elshahat home">
+        <span class="brand-mark" aria-hidden="true">M<span>.</span></span>
+        <span class="brand-name">MOHAMED ELSHAHAT</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
       <div class="nav-links" id="nav-links">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
-        <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark mode</span></button>
-        <a class="nav-cta" href="#contact">Let’s talk <span>↗</span></a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+          <span class="theme-label">Dark mode</span>
+        </button>
+        <a class="nav-cta" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero wrap" id="home">
+  <main id="main-content" tabindex="-1">
+    <section class="hero wrap" id="home" aria-labelledby="hero-title">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR OPPORTUNITIES</div>
-        <h1>Mohamed<br><span class="name-accent">Elshahat</span><span class="hero-period">.</span></h1>
-        <p class="hero-title">Computer Science Student<br><span>&amp; Aspiring Software Developer</span></p>
-        <p class="hero-intro">I turn curious ideas into thoughtful digital experiences. Currently learning, building, and looking for the next problem worth solving.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↘</span></a><a class="text-link" href="#contact">Get in touch <span>↗</span></a></div>
-        <div class="hero-meta"><span>BASED IN EGYPT</span><span class="meta-line"></span><span>CS · YEAR 04</span></div>
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> OPEN TO INTERNSHIPS &amp; JUNIOR ROLES</p>
+        <h1 id="hero-title">Mohamed<br><span class="name-accent">Elshahat</span><span class="hero-period" aria-hidden="true">.</span></h1>
+        <p class="hero-title">Fourth-year Computer Science student<br><span>seeking software development opportunities</span></p>
+        <p class="hero-intro">I’m looking for an internship or entry-level role where I can contribute, learn from an engineering team, and grow as a software developer.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#contact">Connect with me <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta"><span>COMPUTER SCIENCE</span><span class="meta-line" aria-hidden="true"></span><span>YEAR 04</span></div>
       </div>
-      <div class="hero-art reveal" aria-label="Abstract geometric illustration">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      <div class="hero-art reveal" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
         <div class="art-core"><span class="core-bracket">&lt;</span><span class="core-slash">/</span><span class="core-bracket">&gt;</span></div>
         <div class="art-chip chip-top"><span class="chip-dot"></span> BUILDING<br>THE FUTURE</div>
         <div class="art-chip chip-bottom"><span class="chip-code">01</span> CODE · CREATE · REPEAT</div>
-        <div class="spark spark-one">✳</div><div class="spark spark-two">✦</div><div class="art-cross">+</div>
+        <div class="spark spark-one">✳</div>
+        <div class="spark spark-two">✦</div>
+        <div class="art-cross">+</div>
         <div class="art-caption">A LITTLE CURIOSITY<br>GOES A LONG WAY.</div>
       </div>
-      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO DISCOVER</a>
+      <a class="scroll-cue" href="#about"><span class="scroll-line" aria-hidden="true"></span> SCROLL TO DISCOVER</a>
     </section>
 
-    <section class="section wrap" id="about">
-      <div class="section-label reveal"><span>01 / ABOUT</span><span class="label-rule"></span></div>
+    <section class="section wrap" id="about" aria-labelledby="about-title">
+      <div class="section-label reveal"><span>01 / ABOUT</span><span class="label-rule" aria-hidden="true"></span></div>
       <div class="about-layout">
-        <h2 class="section-heading reveal">Learning by<br><span class="muted">making.</span></h2>
-        <div class="about-copy reveal"><p class="lead">I’m Mohamed, a fourth-year Computer Science student fascinated by the way software can make everyday things work better.</p><p>From the first sketch to the final line of code, I enjoy the process of breaking down a challenge and building something useful from it. I’m growing my skills in software development, exploring new technologies, and putting what I learn into practice through personal projects.</p><p>Right now, I’m looking for opportunities to learn from a team, contribute with care, and keep getting better at my craft.</p><a class="inline-link" href="#contact">A little more about me <span>↗</span></a></div>
-      </div>
-    </section>
-
-    <section class="section skills-section" id="skills">
-      <div class="wrap">
-        <div class="section-label reveal"><span>02 / TOOLKIT</span><span class="label-rule"></span></div>
-        <div class="skills-head"><h2 class="section-heading reveal">Tools of the<br><span class="muted">trade.</span></h2><p class="skills-intro reveal">A growing toolkit for taking an idea from “what if?” to “it works.”</p></div>
-        <div class="skill-grid">
-          <article class="skill-card reveal"><span class="skill-index">01</span><div class="skill-icon">{ }</div><h3>Programming</h3><p>Writing clear, structured code and learning the fundamentals that make software reliable.</p><div class="tags"><span>JavaScript</span><span>Python</span><span>C++</span></div></article>
-          <article class="skill-card reveal"><span class="skill-index">02</span><div class="skill-icon">◫</div><h3>Web development</h3><p>Building responsive interfaces that feel considered, accessible, and easy to use.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Responsive UI</span></div></article>
-          <article class="skill-card reveal"><span class="skill-index">03</span><div class="skill-icon">⌘</div><h3>Core concepts</h3><p>Applying computer science foundations to understand problems and shape solid solutions.</p><div class="tags"><span>Data structures</span><span>Algorithms</span><span>OOP</span></div></article>
-          <article class="skill-card reveal"><span class="skill-index">04</span><div class="skill-icon">↗</div><h3>Working together</h3><p>Sharing ideas, staying curious, and making steady progress as part of a team.</p><div class="tags"><span>Git</span><span>Problem solving</span><span>Learning</span></div></article>
+        <h2 class="section-heading reveal" id="about-title">Ready to learn.<br><span class="muted">Ready to contribute.</span></h2>
+        <div class="about-copy reveal">
+          <p class="lead">I’m Mohamed Elshahat, a fourth-year Computer Science student seeking software development internships and entry-level opportunities.</p>
+          <p>I’m looking for a team where I can take on meaningful work, learn from experienced engineers, and continue developing as a software developer.</p>
+          <a class="inline-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
         </div>
-        <p class="skills-note"><span>✳</span> Always learning. Always building.</p>
       </div>
     </section>
 
-    <section class="section wrap" id="projects">
-      <div class="section-label reveal"><span>03 / SELECTED WORK</span><span class="label-rule"></span></div>
-      <div class="projects-head"><h2 class="section-heading reveal">Small steps.<br><span class="muted">Real things.</span></h2><p class="projects-intro reveal">A few projects from my learning journey. Each one taught me something new.</p></div>
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="section-label reveal"><span>02 / TOOLKIT</span><span class="label-rule" aria-hidden="true"></span></div>
+        <div class="skills-head">
+          <h2 class="section-heading reveal" id="skills-title">Skills &amp;<br><span class="muted">coursework.</span></h2>
+          <p class="skills-intro reveal">A concise overview of the skills I’ve developed through coursework and hands-on practice.</p>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card reveal">
+            <span class="skill-index">PRACTICAL PROJECT</span>
+            <div class="skill-icon" aria-hidden="true">&lt;/&gt;</div>
+            <h3>C++</h3>
+            <p>Built a procedural library management project for adding, displaying, searching, borrowing, returning, updating, and deleting books.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-index">FUNDAMENTALS</span>
+            <div class="skill-icon" aria-hidden="true">Py</div>
+            <h3>Python</h3>
+            <p>Good foundation in Python fundamentals.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-index">FUNDAMENTALS</span>
+            <div class="skill-icon" aria-hidden="true">&lt;/&gt;</div>
+            <h3>HTML, CSS &amp; JavaScript</h3>
+            <p>Fundamentals of web technologies, with the ability to modify an existing website.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-index">BASIC QUERIES</span>
+            <div class="skill-icon" aria-hidden="true">SQL</div>
+            <h3>SQL &amp; Databases</h3>
+            <p>Studied databases and can write basic SQL queries.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section-label reveal"><span>03 / SELECTED WORK</span><span class="label-rule" aria-hidden="true"></span></div>
+      <div class="projects-head">
+        <h2 class="section-heading reveal" id="projects-title">Projects with<br><span class="muted">proof.</span></h2>
+        <p class="projects-intro reveal">A selection of coursework projects, described by what the source actually implements.</p>
+      </div>
       <div class="project-list">
-        <article class="project-card reveal"><div class="project-visual visual-one"><div class="window-bar"><i></i><i></i><i></i><span>taskflow.app</span></div><div class="mock-ui"><div class="mock-sidebar"><b>✳ TASKFLOW</b><span>◉ &nbsp; My tasks</span><span>▦ &nbsp; Projects</span><span>⚙ &nbsp; Settings</span></div><div class="mock-main"><small>MONDAY, OCT 20</small><h4>Good morning 👋</h4><div class="mock-task"><b class="check">✓</b><span>Review lecture notes</span><small>Today</small></div><div class="mock-task"><b></b><span>Finish project outline</span><small>Today</small></div><div class="mock-task"><b></b><span>Read for 30 minutes</span><small>Tomorrow</small></div></div></div><span class="visual-watermark">01</span></div><div class="project-info"><div class="project-topline"><span>01 — PERSONAL PROJECT</span><span>2025</span></div><h3>Taskflow <span>↗</span></h3><p>A clean task manager concept for keeping daily priorities in one calm, focused place.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article>
-        <article class="project-card project-reverse reveal"><div class="project-visual visual-two"><div class="weather-card"><div class="weather-location">CAIRO, EGYPT <span>↗</span></div><div class="weather-sun">☼</div><div class="weather-temp">28<span>°</span></div><div class="weather-condition">Clear skies, good vibes.</div><div class="weather-divider"></div><div class="weather-bottom"><span>HUMIDITY <b>42%</b></span><span>WIND <b>12 km/h</b></span></div></div><span class="visual-watermark">02</span></div><div class="project-info"><div class="project-topline"><span>02 — PERSONAL PROJECT</span><span>2025</span></div><h3>Daylight <span>↗</span></h3><p>A minimal weather dashboard concept with a friendly interface and a quick glance at the forecast.</p><div class="tags"><span>JavaScript</span><span>API</span><span>CSS</span></div></div></article>
-        <article class="project-card reveal"><div class="project-visual visual-three"><div class="notes-window"><div class="notes-top"><span>✳ &nbsp; STUDYSPACE</span><span>•••</span></div><div class="notes-title">Your ideas,<br><i>in good order.</i></div><div class="notes-lines"><span>✦ &nbsp; Computer networks <small>6 notes</small></span><span>◈ &nbsp; Data structures <small>4 notes</small></span><span>✳ &nbsp; Web development <small>8 notes</small></span></div></div><span class="visual-watermark">03</span></div><div class="project-info"><div class="project-topline"><span>03 — COURSE PROJECT</span><span>2024</span></div><h3>Studyspace <span>↗</span></h3><p>A simple study notes organizer designed to make course materials easier to find and revisit.</p><div class="tags"><span>Python</span><span>UI design</span><span>OOP</span></div></div></article>
+        <article class="project-card alex-project-card reveal" aria-labelledby="alex-library-title">
+          <div class="project-visual alex-project-visual" aria-hidden="true">
+            <div class="alex-terminal">
+              <div class="alex-terminal-head"><span class="terminal-lights"><i></i><i></i><i></i></span><span>LIBRARY SYSTEM</span><span>C++</span></div>
+              <div class="alex-terminal-menu">
+                <span><b>01</b> Add book</span>
+                <span><b>02</b> Display available</span>
+                <span><b>03</b> Borrow / return</span>
+                <span><b>04</b> Search / update</span>
+                <span><b>05</b> Delete book</span>
+              </div>
+              <div class="alex-terminal-prompt"><span>&gt;</span> menu-driven C++17</div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-topline"><span>CONSOLE APPLICATION</span><span>PROCEDURAL C++</span></div>
+            <h3 id="alex-library-title">Alex Library Management System</h3>
+            <p>A menu-driven program for maintaining a small in-memory book inventory. It tracks book IDs, titles, authors, and availability.</p>
+            <ul class="project-feature-list">
+              <li>Add, search, update, and delete books</li>
+              <li>Display available books</li>
+              <li>Borrow and return books</li>
+              <li>Validate input and enforce the 100-book limit</li>
+            </ul>
+            <div class="tags project-tags" aria-label="Technologies">
+              <span>C++</span>
+              <span>C++17</span>
+            </div>
+            <p class="project-storage-note">In-memory only · no hosted demo</p>
+          </div>
+        </article>
       </div>
-      <div class="project-footnote reveal"><span class="status-dot"></span> MORE PROJECTS IN PROGRESS</div>
     </section>
 
-    <section class="contact-section" id="contact"><div class="wrap contact-wrap"><div class="section-label reveal"><span>04 / SAY HELLO</span><span class="label-rule"></span></div><div class="contact-content"><div class="contact-copy reveal"><p class="eyebrow contact-eyebrow">HAVE A PROJECT OR OPPORTUNITY?</p><h2>Let’s make<br><span>something</span><br>meaningful.</h2><p class="contact-desc">I’m always up for a thoughtful conversation about software, collaboration, or a new challenge.</p><a class="button button-light" href="mailto:hello@mohamedelshahat.dev">Start a conversation <span>↗</span></a></div><div class="contact-side reveal"><div class="contact-orbit"><span>✳</span></div><div class="contact-links"><a href="mailto:hello@mohamedelshahat.dev"><span>EMAIL</span><b>hello@mohamedelshahat.dev</b><i>↗</i></a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><span>LINKEDIN</span><b>Let’s connect professionally</b><i>↗</i></a><a href="https://github.com/" target="_blank" rel="noreferrer"><span>GITHUB</span><b>See what I’m building</b><i>↗</i></a></div></div></div><footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">M<span>.</span></span><span class="brand-name">MOHAMED ELSHAHAT</span></a><span>DESIGNED & BUILT WITH CURIOSITY <b>✳</b></span><a href="#home" class="back-top">BACK TO TOP ↑</a><small>© <span id="year"></span> MOHAMED ELSHAHAT</small></footer></div></section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-wrap">
+        <div class="section-label reveal"><span>04 / SAY HELLO</span><span class="label-rule" aria-hidden="true"></span></div>
+        <div class="contact-content">
+          <div class="contact-copy reveal">
+            <p class="eyebrow contact-eyebrow">INTERNSHIPS · JUNIOR OPPORTUNITIES · COLLABORATION</p>
+            <h2 id="contact-title">Let’s start<br><span>a conversation.</span></h2>
+            <p class="contact-desc">I’m open to connecting about software development opportunities and early-career roles.</p>
+            <a class="button button-light" href="https://github.com/mohamedelshshat22-wq" target="_blank" rel="noopener noreferrer">Visit my GitHub profile <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact-side reveal">
+            <div class="contact-orbit" aria-hidden="true"><span>✳</span></div>
+            <div class="contact-links">
+              <a href="https://www.facebook.com/share/1DxKcTXiVf/" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile, opens in a new tab">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.5 21v-7.1h2.4l.36-2.78H13.5V9.34c0-.8.22-1.34 1.38-1.34h1.47V5.51A19.3 19.3 0 0 0 14.2 5c-2.14 0-3.6 1.3-3.6 3.69v2.43H8.18v2.78h2.42V21h2.9Z"/></svg>
+                <span>FACEBOOK</span><b>View profile</b><i aria-hidden="true">↗</i>
+              </a>
+              <a href="https://www.instagram.com/moelsha7at?vrfl=cGMxaGp4cjZ3cDF5" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile, opens in a new tab">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.8" cy="6.4" r="1.15" fill="currentColor"/></svg>
+                <span>INSTAGRAM</span><b>@moelsha7at</b><i aria-hidden="true">↗</i>
+              </a>
+              <a href="https://wa.me/201095179906" aria-label="WhatsApp Mohamed Elshahat at 01095179906">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 11.5a8 8 0 0 1-11.8 7l-4 1 1-3.9A8 8 0 1 1 20 11.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/><path d="M9.1 8.2c.2-.5.45-.5.7-.5h.5c.15 0 .35.05.45.35l.7 1.65c.1.25.1.4-.05.6l-.55.7c-.15.15-.2.3-.05.5.45.75 1.1 1.4 1.9 1.8.2.1.35.1.5-.1l.7-.8c.15-.2.35-.25.55-.15l1.6.75c.25.1.4.2.4.4 0 .25-.1 1.1-.75 1.55-.55.4-1.3.6-2.1.35-1.05-.3-2.35-.85-3.85-2.2-1.15-1.05-1.9-2.35-2.1-3.25-.2-.85.1-1.55.55-2.05.25-.25.55-.4.85-.4Z" fill="currentColor"/></svg>
+                <span>WHATSAPP</span><b>01095179906</b><i aria-hidden="true">↗</i>
+              </a>
+              <a href="mailto:mohamedelshshat22@gmail.com" aria-label="Email Mohamed Elshahat">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.8" y="4.8" width="18.4" height="14.4" rx="1.8" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4 6 8 6.3L20 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></svg>
+                <span>EMAIL</span><b>mohamedelshshat22@gmail.com</b><i aria-hidden="true">↗</i>
+              </a>
+              <a href="https://www.linkedin.com/in/mohamed-elshahat-28621529b?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile, opens in a new tab">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M5.2 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM3.5 9h3.4v11.5H3.5V9Zm5.5 0h3.3v1.6h.05c.46-.87 1.58-1.8 3.25-1.8 3.48 0 4.12 2.3 4.12 5.3v6.4h-3.45v-5.67c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.2 1.48-2.2 3v5.77H9V9Z"/></svg>
+                <span>LINKEDIN</span><b>View profile</b><i aria-hidden="true">↗</i>
+              </a>
+              <a href="https://github.com/mohamedelshshat22-wq" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2.4a9.6 9.6 0 0 0-3.03 18.71c.48.09.66-.2.66-.46v-1.66c-2.68.58-3.25-1.14-3.25-1.14-.44-1.12-1.08-1.42-1.08-1.42-.88-.6.07-.59.07-.59.97.07 1.48 1 1.48 1 .86 1.47 2.25 1.05 2.8.8.09-.63.34-1.05.61-1.3-2.14-.24-4.4-1.07-4.4-4.76 0-1.05.38-1.9 1-2.58-.1-.25-.44-1.22.1-2.55 0 0 .82-.26 2.64.98a9.2 9.2 0 0 1 4.8 0c1.83-1.24 2.65-.98 2.65-.98.53 1.33.2 2.3.1 2.55.62.68 1 1.53 1 2.58 0 3.7-2.27 4.52-4.43 4.76.35.3.66.88.66 1.77v2.63c0 .26.17.56.66.46A9.6 9.6 0 0 0 12 2.4Z"/></svg>
+                <span>GITHUB</span><b>mohamedelshshat22-wq</b><i aria-hidden="true">↗</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <a class="brand footer-brand" href="#home" aria-label="Back to Mohamed Elshahat home">
+            <span class="brand-mark" aria-hidden="true">M<span>.</span></span>
+            <span class="brand-name">MOHAMED ELSHAHAT</span>
+          </a>
+          <span>BUILT WITH CURIOSITY <b aria-hidden="true">✳</b></span>
+          <a href="#home" class="back-top">BACK TO TOP ↑</a>
+          <small>© <span id="year"></span> MOHAMED ELSHAHAT</small>
+        </footer>
+      </div>
+    </section>
   </main>
 </body>
 </html>
